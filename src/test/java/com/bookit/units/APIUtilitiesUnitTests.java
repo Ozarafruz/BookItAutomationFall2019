@@ -26,7 +26,7 @@ public class APIUtilitiesUnitTests {
         int actual  = APIUtilities.getUserID("thereisnoshuchemail@gnail.com","h332421h");
         Assert.assertEquals(-1,actual);
 
-        int actual2 = APIUtilities.getUserID(Environment.MEMBER_USERNAME, Environment.MEMBER_PASSWORD);
+        int actual2 = APIUtilities.getUserID(Environment.LEADER_USERNAME, Environment.LEADER_PASSWORD);
         //positive test
         Assert.assertTrue(actual2 > 0);//if ID is positive - user exists indeed, otherwise it returns -1
     }
